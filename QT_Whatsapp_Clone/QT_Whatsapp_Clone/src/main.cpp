@@ -22,10 +22,12 @@ int main(int argc, char *argv[])
             if (!obj && url == objUrl)
                 QCoreApplication::exit(-1);
         },
-        Qt::QueuedConnection);
+        Qt::DirectConnection);
 
     engine.addImportPath(QCoreApplication::applicationDirPath() + "/qml");
     engine.addImportPath(":/");
+
+    engine.rootContext()->setContextProperty("_aString", "Hello from C++!");
 
     engine.load(url);
 
