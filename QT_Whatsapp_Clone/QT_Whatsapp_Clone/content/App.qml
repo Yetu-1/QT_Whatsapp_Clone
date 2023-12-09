@@ -5,13 +5,15 @@ import QtQuick 6.2
 import QT_Whatsapp_Clone
 
 Window {
-    width: mainScreen.width
-    height: mainScreen.height
+    maximumWidth: mainScreen.width
+    maximumHeight: mainScreen.height
+    minimumWidth: mainScreen.width
+    minimumHeight: mainScreen.height
 
     visible: true
     title: "QT_Whatsapp_Clone"
 
-    Screen01 {
+    MainScreen {
         id: mainScreen
     }
 

@@ -10,4 +10,8 @@ qt6_add_qml_module(content
         Screen01.ui.qml
     RESOURCES
         fonts/fonts.txt
+        QML_FILES MainScreen.qml
+        QML_FILES ContactModel.qml
+        QML_FILES IconButton.qml
+
 )
